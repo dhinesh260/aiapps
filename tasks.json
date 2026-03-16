@@ -4,32 +4,38 @@
     {
       "label": "AI: Generate Repo Tree",
       "type": "shell",
-      "command": "tree -L 3 > ai-architecture/context/repo-tree.txt"
+      "command": "tree -L 3 > ai-architecture/context/repo-tree.txt",
+      "problemMatcher": []
     },
     {
       "label": "AI: List Important Files",
       "type": "shell",
-      "command": "find src -type f | head -n 20 > ai-architecture/context/key-files.txt"
-    },
-    {
-      "label": "AI: Open Architecture Prompt",
-      "type": "shell",
-      "command": "code ai-architecture/prompts/architecture.md"
+      "command": "find src -type f | head -n 20 > ai-architecture/context/key-files.txt",
+      "problemMatcher": []
     },
     {
       "label": "AI: Open Repo Tree",
       "type": "shell",
-      "command": "code ai-architecture/context/repo-tree.txt"
+      "command": "code ai-architecture/context/repo-tree.txt",
+      "problemMatcher": []
     },
     {
       "label": "AI: Open Key Files",
       "type": "shell",
-      "command": "code ai-architecture/context/key-files.txt"
+      "command": "code ai-architecture/context/key-files.txt",
+      "problemMatcher": []
+    },
+    {
+      "label": "AI: Open Architecture Prompt",
+      "type": "shell",
+      "command": "code ai-architecture/prompts/architecture.md",
+      "problemMatcher": []
     },
     {
       "label": "AI: Open Architecture Output",
       "type": "shell",
-      "command": "code ai-architecture/output/architecture.html"
+      "command": "code ai-architecture/output/architecture.html",
+      "problemMatcher": []
     },
     {
       "label": "AI: Generate Architecture Workflow",
@@ -39,7 +45,8 @@
         "AI: Open Repo Tree",
         "AI: Open Key Files",
         "AI: Open Architecture Prompt"
-      ]
+      ],
+      "problemMatcher": []
     }
   ]
 }
