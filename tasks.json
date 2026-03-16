@@ -1,0 +1,45 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "AI: Generate Repo Tree",
+      "type": "shell",
+      "command": "tree -L 3 > ai-architecture/context/repo-tree.txt"
+    },
+    {
+      "label": "AI: List Important Files",
+      "type": "shell",
+      "command": "find src -type f | head -n 20 > ai-architecture/context/key-files.txt"
+    },
+    {
+      "label": "AI: Open Architecture Prompt",
+      "type": "shell",
+      "command": "code ai-architecture/prompts/architecture.md"
+    },
+    {
+      "label": "AI: Open Repo Tree",
+      "type": "shell",
+      "command": "code ai-architecture/context/repo-tree.txt"
+    },
+    {
+      "label": "AI: Open Key Files",
+      "type": "shell",
+      "command": "code ai-architecture/context/key-files.txt"
+    },
+    {
+      "label": "AI: Open Architecture Output",
+      "type": "shell",
+      "command": "code ai-architecture/output/architecture.html"
+    },
+    {
+      "label": "AI: Generate Architecture Workflow",
+      "dependsOn": [
+        "AI: Generate Repo Tree",
+        "AI: List Important Files",
+        "AI: Open Repo Tree",
+        "AI: Open Key Files",
+        "AI: Open Architecture Prompt"
+      ]
+    }
+  ]
+}
